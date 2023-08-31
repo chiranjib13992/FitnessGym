@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex;
     position: relative;
   }
 
@@ -71,6 +71,9 @@
     justify-content: center;
     margin-top: 25px;
   }
+  .content{
+    justify-content: center;
+  }
   .signup-btn{
     background-color: rgba(0, 119, 255, 0.724); 
     color: white;
@@ -97,14 +100,18 @@
   }
   
   .dropbtn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    background-color: none;
+    color: red;
+    border: none;
+    padding: none;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     top: 100%;
@@ -176,6 +183,41 @@
     font-size: 12px;
     color: white;
 }
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dots span.active {
+    background-color: black;
+  }
+  
 .price-btn{
     margin-top: 1px;
     margin-bottom: 19px;

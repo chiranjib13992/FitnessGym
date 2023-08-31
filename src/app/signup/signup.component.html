@@ -1,0 +1,29 @@
+
+<h2>Sign Up</h2>
+<mat-form-field>
+  <input matInput placeholder="Name">
+</mat-form-field>
+<mat-form-field>
+  <input matInput type="tel" placeholder="Mobile Number">
+</mat-form-field>
+<mat-form-field>
+  <input matInput type="email" placeholder="Email ID">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Gender</mat-label>
+  <mat-select>
+    <mat-option value="male">Male</mat-option>
+    <mat-option value="female">Female</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field>
+  <input matInput type="date" placeholder="Date of Birth">
+</mat-form-field>
+<mat-form-field>
+  <textarea matInput placeholder="Address"></textarea>
+</mat-form-field>
+
+<div class="dialog-buttons">
+  <button mat-button (click)="onSubmit()">Submit</button>
+  <button mat-button mat-dialog-close>Reset</button>
+</div>

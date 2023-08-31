@@ -1,0 +1,268 @@
+/* Base styles */
+.background-container {
+    background-image: url('../assets/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .centre-cont{
+  position: relative;
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  }
+  .first-cont{
+    font-size: 30px;
+    color: white;
+  }
+  .sec-cont{
+    font-size: 23px;
+    color: rgba(255, 4, 0, 0.607);
+  }
+
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.799);
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .lifeStyle {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+  }
+  
+  .gym {
+    font-size: 12px;
+  }
+  .signup{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .signup-btn{
+    background-color: rgba(0, 119, 255, 0.724); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .drop {
+    position: relative;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .dropbtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+ 
+  .horizontal-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 25px;
+  }
+  
+  .compartment {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .white-compartment {
+    position: relative;
+    background-color: white;
+  }
+  
+  .red-compartment {
+    position: relative;
+    background-color: rgba(240, 94, 58, 0.815);
+  }
+  
+  .blue-compartment {
+    position: relative;
+    background-color: rgb(18, 129, 219);
+  }
+  
+.box-one{
+    position: relative;
+    margin-top: 13px;
+    margin-left: 10px;
+    color: rgb(18, 129, 219);
+}
+.special-promo{
+    margin-left: 29px;
+    color: white;
+    font-size: 20px;
+}
+.lorem-dic{
+    margin-top: 10px;
+}
+.lorem{
+    margin-left: 29px;
+    font-size: 12px;
+    color: white;
+}
+.price-btn{
+    margin-top: 1px;
+    margin-bottom: 19px;
+    margin-left: 29px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+.contact{
+    position: relative;
+    margin-left: 25px;
+    color: white;
+}
+.call{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: white;
+}
+.mail{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 1px;
+    color: white;
+}
+.cont-btn{
+    margin-top: 1px;
+    margin-bottom: 19px;
+    margin-left: 25px;
+    background-color: rgb(39, 104, 147);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+.news-item {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+  }
+  
+  .news-image {
+    width: 100px; /* Adjust the image width as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .news-text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .by-2{
+    font-weight: bold;
+  }
+  .by-3{
+    font-weight: bold;
+    margin-top: 19px;
+  }
+  .by{
+    margin-top: 10px;
+  }
+  .sarah{
+    color: wheat;
+    border: 1px solid green;
+   background-color: green;
+   padding: 5px;
+   border-radius: 3px;
+    
+  }
+  .oct{
+    color: darkgrey;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .lifeStyle {
+      font-size: 20px;
+    }
+    
+    .dropbtn {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+    
+    .navbar {
+      padding: 10px;
+    }
+  }
+  

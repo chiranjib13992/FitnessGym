@@ -10,7 +10,14 @@ export class DialogService {
   constructor(private dialog: MatDialog) { }
   openSignUpDialog(): void {
     const dialogRef = this.dialog.open(SignupComponent, {
-      width: '300px' 
+      width: '600px',
+      height:'auto',
+      disableClose: true,
+      autoFocus: false, 
     });
+    dialogRef.afterClosed().subscribe((res)=>{
+      console.log('close');
+      
+    })
   }
 }
